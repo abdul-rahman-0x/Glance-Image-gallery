@@ -4,75 +4,247 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Image Slider Gallery</title>
+    <title>Glance | The Art of Sight </title>
 </head>
 
 <body>
 
-    <div class="slider">
-        <div class="slide current">
-            <div class="content">
-                <h1>Slide One</h1>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque doloribus illo enim quis
-                    molestias alias fugiat aspernatur dolor, fuga facilis natus error sed, officia libero reiciendis
-                    nostrum dicta architecto ipsam.
-                </p>
-            </div>
-        </div>
-
-        <div class="slide">
-            <div class="content">
-                <h1>Slide Two</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores explicabo sunt eos
-                    alias. Laborum deserunt ipsam alias facere dolorem voluptates, explicabo maiores eum architecto. Sit
-                    modi neque atque accusantium.</p>
-            </div>
-        </div>
-
-        <div class="slide">
-            <div class="content">
-                <h1>Slide Three</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores explicabo sunt eos
-                    alias. Laborum deserunt ipsam alias facere dolorem voluptates, explicabo maiores eum architecto. Sit
-                    modi neque atque accusantium.</p>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="content">
-                <h1>Slide Four</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores explicabo sunt eos
-                    alias. Laborum deserunt ipsam alias facere dolorem voluptates, explicabo maiores eum architecto. Sit
-                    modi neque atque accusantium.</p>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="content">
-                <h1>Slide Five</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores explicabo sunt eos
-                    alias. Laborum deserunt ipsam alias facere dolorem voluptates, explicabo maiores eum architecto. Sit
-                    modi neque atque accusantium.</p>
-            </div>
-        </div>
-
-        <div class="slide">
-            <div class="content">
-                <h1>Slide Six</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores explicabo sunt eos
-                    alias. Laborum deserunt ipsam alias facere dolorem voluptates, explicabo maiores eum architecto. Sit
-                    modi neque atque accusantium.</p>
-            </div>
-        </div>
+    <!-- Minimal Preloader -->
+    <div id="preloader">
+        <div class="loader-line"></div>
     </div>
 
-    <div class="buttons">
-        <button id="prev"><i class="fas fa-arrow-left"></i></button>
-        <button id="next"><i class="fas fa-arrow-right"></i></button>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">GLANCE.</a>
+            <!-- Links -->
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button></li>
+            </ul>
 
+            <!-- Mobile Menu Button (Pure CSS - No Icons) -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider (7 Images) -->
+    <header id="home" class="slider-container">
+        <!-- Slide 1 -->
+        <div class="slide current">
+            <div class="content">
+                <h1>Nordic Silence</h1>
+                <p>Embrace the cold, minimalist beauty of the north.</p>
+                <a href="#gallery" class="cta-btn">View Gallery</a>
+            </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide">
+            <div class="content">
+                <h1>Urban Echoes</h1>
+                <p>The city sleeps, but the lights never fade away.</p>
+                <a href="#gallery" class="cta-btn">View Gallery</a>
+            </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="slide">
+            <div class="content">
+                <h1>Golden Hour</h1>
+                <p>When the sun touches the horizon, magic happens.</p>
+                <a href="#gallery" class="cta-btn">View Gallery</a>
+            </div>
+        </div>
+        <!-- Slide 4 -->
+        <div class="slide">
+            <div class="content">
+                <h1>Desert Winds</h1>
+                <p>The vast emptiness of the shifting sands.</p>
+                <a href="#gallery" class="cta-btn">View Gallery</a>
+            </div>
+        </div>
+        <!-- Slide 5 -->
+        <div class="slide">
+            <div class="content">
+                <h1>Deep Ocean</h1>
+                <p>Mystery lies beneath the blue surface.</p>
+                <a href="#gallery" class="cta-btn">View Gallery</a>
+            </div>
+        </div>
+        <!-- Slide 6 -->
+        <div class="slide">
+            <div class="content">
+                <h1>Alpine Peaks</h1>
+                <p>Standing tall above the clouds.</p>
+                <a href="#gallery" class="cta-btn">View Gallery</a>
+            </div>
+        </div>
+        <!-- Slide 7 -->
+        <div class="slide">
+            <div class="content">
+                <h1>Neon Tokyo</h1>
+                <p>Future aesthetics in the present day.</p>
+                <a href="#gallery" class="cta-btn">View Gallery</a>
+            </div>
+        </div>
+
+        <div class="slider-buttons">
+            <button id="prev"><i class="fas fa-arrow-left"></i></button>
+            <button id="next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+        <div class="dots-container" id="dots-container"></div>
+    </header>
+
+    <!-- Gallery Section (16 Images) -->
+    <section id="gallery" class="section-padding">
+        <div class="section-header reveal-text">
+            <h2>Visual Stories</h2>
+            <p>Explore our extensive collection of moments.</p>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- First 4 Visible by default -->
+            <div class="gallery-item reveal-img"><img
+                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=800" loading="lazy">
+                <div class="overlay">
+                    <h3>Highlands</h3><button class="open-lightbox"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="gallery-item reveal-img"><img
+                    src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=800" loading="lazy">
+                <div class="overlay">
+                    <h3>Deep Forest</h3><button class="open-lightbox"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="gallery-item reveal-img"><img
+                    src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?q=80&w=800" loading="lazy">
+                <div class="overlay">
+                    <h3>Cascades</h3><button class="open-lightbox"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="gallery-item reveal-img"><img
+                    src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=800" loading="lazy">
+                <div class="overlay">
+                    <h3>Azure Coast</h3><button class="open-lightbox"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+
+            <!-- Hidden items (Will be shown via "Load More" button) -->
+            <div class="gallery-item reveal-img hidden"><img
+                    src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=800" loading="lazy">
+                <div class="overlay">
+                    <h3>Serenity</h3><button class="open-lightbox"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="gallery-item reveal-img hidden"><img
+                    src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=800" loading="lazy">
+                <div class="overlay">
+                    <h3>Autumn</h3><button class="open-lightbox"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="gallery-item reveal-img hidden"><img
+                    src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?q=80&w=800" loading="lazy">
+                <div class="overlay">
+                    <h3>Dark Woods</h3><button class="open-lightbox"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="gallery-item reveal-img hidden"><img
+                    src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?q=80&w=800" loading="lazy">
+                <div class="overlay">
+                    <h3>Reflections</h3><button class="open-lightbox"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="gallery-item reveal-img hidden"><img
+                    src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800" loading="lazy">
+                <div class="overlay">
+                    <h3>Snowy Peak</h3><button class="open-lightbox"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="gallery-item reveal-img hidden"><img
+                    src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?q=80&w=800" loading="lazy">
+                <div class="overlay">
+                    <h3>Green Field</h3><button class="open-lightbox"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="gallery-item reveal-img hidden"><img
+                    src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=800" loading="lazy">
+                <div class="overlay">
+                    <h3>Sunset</h3><button class="open-lightbox"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="gallery-item reveal-img hidden"><img
+                    src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?q=80&w=800" loading="lazy">
+                <div class="overlay">
+                    <h3>Storm</h3><button class="open-lightbox"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="gallery-item reveal-img hidden"><img
+                    src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?q=80&w=800" loading="lazy">
+                <div class="overlay">
+                    <h3>New York</h3><button class="open-lightbox"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="gallery-item reveal-img hidden"><img
+                    src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=800" loading="lazy">
+                <div class="overlay">
+                    <h3>Hiking</h3><button class="open-lightbox"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="gallery-item reveal-img hidden"><img
+                    src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?q=80&w=800" loading="lazy">
+                <div class="overlay">
+                    <h3>Minimal</h3><button class="open-lightbox"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="load-more-container">
+            <button id="load-more-btn">Load More</button>
+        </div>
+    </section>
+
+    <!-- About / Contact / Footer (Same as before) -->
+    <section id="about" class="bg-alt section-padding">
+        <div class="container reveal-text">
+            <div class="quote-box">
+                <i class="fas fa-quote-left"></i>
+                <p>"Photography is the story I fail to put into words."</p>
+                <span>- Destin Sparks</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="contact-container reveal-text">
+            <h2>Get in Touch</h2>
+            <form class="minimal-form">
+                <div class="form-group"><input type="text" placeholder="Your Name" required></div>
+                <div class="form-group"><input type="email" placeholder="Your Email" required></div>
+                <div class="form-group"><textarea placeholder="Message" rows="4" required></textarea></div>
+                <button type="submit" class="cta-btn dark">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Glance. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
     </div>
 
     <script src="script.js"></script>
