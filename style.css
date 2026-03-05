@@ -559,4 +559,8 @@ footer {
     .content h1 {
         font-size: 2rem;
     }
+
+    #prev, #next {
+        display: none !important;
+    }
 }
