@@ -97,5 +97,5 @@ The mobile navigation menu transforms from a "Hamburger" to a "Cross" (X) using 
 Distributed under the MIT License. See LICENSE for more information.
 <div align="center">
 <br />
-<sub>Built with precision by <a href="#">Abdul Rahman</a></sub>
+<sub>Built with precision by <a href="#">Mariya Shaikh</a></sub>
 </div>
