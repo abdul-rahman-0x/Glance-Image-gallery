@@ -99,7 +99,7 @@ Image-Slider-Gallery/
 Copy the repository to your local machine:
 
 ```
-git clone https://github.com/ABDUL-RAHMAN-9/Image-Slider-Gallery.git
+git clone https://github.com/abdul-rahman-0x/Image-Slider-Gallery.git
 ```
 
 ### 2. Navigate to Directory
@@ -117,5 +117,5 @@ Since this is a front-end project, you can run it instantly:
 
 ## Author
 
-Built by **[Abdul Rahman](https://github.com/ABDUL-RAHMAN-9)**  
+Built by **[Abdul Rahman](https://github.com/abdul-rahman-0x)**  
 
